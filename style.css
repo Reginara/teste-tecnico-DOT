@@ -33,33 +33,37 @@ h1 {
 }
 
 .header-text {
-  margin-left: 425px;
+  display: flex;
+  justify-content: center;
   font-size: 30px;
   letter-spacing: 2px;
 }
 
-.briefcase {
+.briefcase-section {
   background-color: #7a2b58;
   height: 482px;
+}
+
+.briefcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .briefcase h2 {
   font-size: 44px;
   color: #ffcc33;
-  padding-top: 62px;
-  padding-left: 549px;
+  margin: 62px auto 33px auto;
 }
 
 .briefcase-div {
-  margin-left: 268px;
-  margin-top: 33px;
+  display: flex;
+  align-items: center;
   width: 830px;
   height: 275px;
   border-radius: 20px;
   border: solid 3px #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .briefcase-img {
@@ -89,26 +93,31 @@ h1 {
 .dropdown {
   background-color: #03b5b0;
   color: #fff;
+  height: 933px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown h2 {
   font-size: 44px;
   color: #ffcc33;
-  padding: 70px 0 40px 571px;
+  padding-top: 70px;
 }
 
 .dropdown-text {
   font-size: 20px;
-  padding: 0 211px 70px;
+  padding-top: 40px;
   text-align: left;
+  width: 944px;
 }
 
 .dropdown-cards {
   display: flex;
   align-items: center;
-  margin-top: 40px;
-  margin-left: 211px;
   padding-bottom: 70px;
+  margin-top: 70px;
 }
 
 .card {
@@ -116,25 +125,200 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 302px;
-  height: 532px;
   background-color: #fff;
-  padding-top: 29px;
   margin-right: 20px;
   border-radius: 20px;
 }
 
+.img-card {
+  align-items: center;
+  height: 234px;
+}
+
 .icon-map {
+  margin-top: 41px;
   width: 170px;
   height: 170px;
 }
 
+.icon-file {
+  margin-top: 52px;
+  width: 154px;
+  height: 154px;
+}
+
+.icon-group {
+  margin-top: 36px;
+  width: 164px;
+  height: 175px;
+}
+
+.btn {
+  background-color: #ffcc33;
+  width: 302px;
+  height: 40px;
+}
+
+.dropdown button {
+  border: none;
+  background-color: #7a2b58;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: 5px 124px;
+  position: absolute;
+}
+
 .card-text {
   background-color: #ffcc33;
+  width: 302px;
+  height: 305px;
+  border-radius: 0 0 20px 20px;
+}
+
+.text {
   color: #7a2b58;
   font-size: 18px;
   text-align: left;
   line-height: 21px;
-  width: 302px;
-  height: 345px;
-  border-radius: 0 0 20px 20px;
+  padding: 41px 28px;
+}
+
+.icon-right {
+  margin-left: 1355px;
+  margin-top: -75px;
+}
+
+
+.office-section {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.office-section h3 {
+  color: #03b5b0;
+  font-size: 38px;
+  padding-top: 70px;
+}
+
+.office-div {
+  padding-top: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.office-text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  width: 406px;
+  height: 312px;
+  margin-right: 76px;
+}
+
+.office-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-blue {
+  width: 143px;
+  height: 82px;
+  margin: 0 0 -40px -20px;
+  z-index: 1;
+}
+
+.icon-yellow {
+  width: 143px;
+  height: 82px;
+  margin-top: -45px;
+  margin-left: 320px;
+  z-index: 1;
+}
+
+.interactive-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive-text {
+  color: #707070;
+  font-size: 20px;
+  line-height: 24px;
+  width: 944px;
+  height: 211px;
+  margin-top: 70px;
+}
+
+.interactive-cicle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.cicle-text {
+  color: #000;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 138px;
+  width: 330px;
+  height: 330px;
+  z-index: 1;
+  border: solid 2px #000;
+  opacity: 1;
+  background-color: #ffcc33;
+  border-radius: 50%;
+  margin: 139px 133px;
+  position: absolute;
+}
+
+.interactive-section button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #03b5b0;
+  box-shadow: 0px 4px 10px #000029;
+  opacity: 1;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 2;
+  margin-top: 30px;
+  height: 570px;
+  width: 570px;
+}
+
+.btn-red {
+  float: left;
+  margin: 445px 0 0 30px;
+}
+
+.btn-yellow {
+  margin: 43px 0 0 260px;
+}
+
+.btn-grey {
+  float: right;
+  margin: 355px 35px 0 0;
+}
+
+footer {
+  background-color: #7a2b58;
+  height: 299px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
