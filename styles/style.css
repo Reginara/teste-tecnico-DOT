@@ -11,9 +11,9 @@
 }
 
 .header {
-  height: 470px;
-  background: url(../assets/header-360.png);
-  background-size: cover;
+  height: 450px;
+  background: url(../assets/header-360.png) no-repeat center center;
+  background-size: 100%;
   position: relative;
   color: #fff;
   display: flex;
@@ -193,8 +193,7 @@ h1 {
 
 .icon-right {
   width: 72px;
-  margin-left: 360px;
-  margin-top:-120px;
+  margin: -120px -360px 0 0;
   clip:rect(0px, 36px, 0, 0);
 }
 
@@ -269,7 +268,7 @@ h1 {
   line-height: 22px;
   width: 320px;
   height: 283px;
-  margin-top: 35px;
+  margin: 35px 0;
 }
 
 .interactive-cicle {
@@ -283,7 +282,6 @@ h1 {
 .cicle-img {
   width: 320px;
   height: 328px;
-  margin-top: 35px;
 }
 
 .cicle-text {
@@ -352,3 +350,20 @@ h1 {
     height: 70px;
   }
   
+
+@media screen and (min-width: 361px) {
+  .header {
+    background: url(../assets/header-1024.png) no-repeat center center;
+  }
+
+  .icon-right {
+    margin-right: -360px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    background: url(../assets/header-1024.png) no-repeat center center;
+    background-size: 83em;
+  }
+}
