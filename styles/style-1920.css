@@ -1,25 +1,25 @@
-@media screen and (min-width: 361px) and (max-width: 1366px) {
+@media screen and (min-width: 1920px) {
   .container {
     width: 100%;
   }
 
   .header {
     width: 100%;
-    height: 674px;
-    background: url(./assets/header-1024.png) no-repeat center center;
+    height: 937px;
+    background: url(../assets/header-1920.png) no-repeat center center;
     background-size: cover;
   }
 
   .logo-header {
-    margin: 150px 0 0 557px;
+    display: block;
+    margin: 150px auto 0 auto;
     width: 252px;
     height: 75px;
   }
   
   h1 {
     font-size: 87px;
-    text-align: center;
-    margin-top: 100px;
+    margin-top: 180px;
     letter-spacing: 5px;
   }
   

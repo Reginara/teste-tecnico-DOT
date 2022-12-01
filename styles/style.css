@@ -6,20 +6,23 @@
 }
 
 .container {
-  width: 360px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .header {
   height: 470px;
-  background: url(./assets/header-360.png);
+  background: url(../assets/header-360.png);
   background-size: cover;
   position: relative;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-header {
-  margin: 54px 0 0 111px;
+  display: block;
+  margin: 70px auto 0 auto;  
   width: 139px;
   height: 41px;
 }
@@ -27,6 +30,7 @@
 h1 {
   font-size: 45px;
   margin-top: 98px;
+  text-align: center;
 }
 
 .header-text {
