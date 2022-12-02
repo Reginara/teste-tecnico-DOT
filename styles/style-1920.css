@@ -82,10 +82,11 @@
     padding-top: 40px;
     width: 944px;
   }
-
+  
   .dropdown-cards {
     flex-direction: row;
     padding-bottom: 0;
+    align-items: baseline;
   }
   
   .card {

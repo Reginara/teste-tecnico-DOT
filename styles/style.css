@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  list-style: none;
 }
 
 .container {
@@ -86,8 +87,20 @@ h1 {
 
 .briefcase-list ul {
   margin: 20px 0 0 20px;
-  list-style-type: square;
-} 
+}
+
+.briefcase-list li {
+  margin-left: -20px;
+}
+
+.briefcase-list li::before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  background-color: #ffcc33;
+}
 
 .icon-left {
   width: 72px;
@@ -160,13 +173,17 @@ h1 {
   height: 175px;
 }
 
-.btn {
+.btn-open {
   background-color: #ffcc33;
   width: 302px;
   height: 40px;
 }
 
-.dropdown button {
+.div-opened {
+  display: none;
+}
+
+.dropdown .btn-card-open {
   border: none;
   background-color: #7a2b58;
   width: 54px;
@@ -174,6 +191,25 @@ h1 {
   border-radius: 50%;
   margin: 5px 124px;
   position: absolute;
+  cursor: pointer;
+}
+
+.btn-close {
+  background-color: #7a2b58;
+  width: 302px;
+  height: 40px;
+  border-radius: 0 0 20px 20px;
+}
+
+.dropdown .btn-card-close {
+  border: none;
+  background-color: #fff;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: 5px 124px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .card-text {
@@ -286,7 +322,6 @@ h1 {
 
 .cicle-text {
   color: #000;
-  background-color: #ffcc33;
   border: solid 2px #000;
   border-radius: 50%;
   width: 165px;
@@ -299,8 +334,12 @@ h1 {
   opacity: 1;
   margin: 74px 70px;
   }
+
+.color-red, .color-yellow, .color-grey {
+  display: none;
+}
   
-.interactive-section button {
+.interactive-section .btn-plus {
   width: 25px;
   height: 25px;
   border: none;
@@ -308,47 +347,70 @@ h1 {
   background-color: #03b5b0;
   box-shadow: 0px 4px 10px #000029;
   opacity: 1;
+  cursor: pointer;
 }
 
-  .plus {
-    width: 11px;
-    height: 11px;
-  }
-  
-  .buttons {
-    position: absolute;
-    z-index: 2;
-    margin-top: 30px;
-    height: 285px;
-    width: 285px;
-  }
-  
-  .btn-red {
-    float: left;
-    margin: 218px 0 0 15px;
-  }
-  
-  .btn-yellow {
-    margin: 12px 0 0 130px;
-  }
-  
-  .btn-grey {
-    float: right;
-    margin: 180px 15px 0 0;
-  }
+.interactive-section .btn-minus {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: #7a2b58;
+  box-shadow: 0px 4px 10px #000029;
+  opacity: 1;
+  display: none;
+  cursor: pointer;
+}
 
-  footer {
-    background-color: #7a2b58;
-    height: 299px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo-footer {
-    width: 240px;
-    height: 70px;
-  }
+.plus, .minus {
+  width: 11px;
+  height: 11px;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 2;
+  margin-top: 30px;
+  height: 285px;
+  width: 285px;
+}
+
+.btn-red {
+  float: left;
+  margin: 218px 0 0 15px;
+}
+
+.btn-red-minus {
+  float: left;
+  margin-top: 218px;
+}
+
+.btn-yellow, .btn-yellow-minus {
+  margin: 12px 0 0 130px;
+}
+
+.btn-grey {
+  float: right;
+  margin: 165px 15px 0 0;
+}
+
+.btn-grey-minus {
+  float: right;
+  margin-top: 165px;
+}
+
+footer {
+  background-color: #7a2b58;
+  height: 299px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 240px;
+  height: 70px;
+}
   
 
 @media screen and (min-width: 361px) {

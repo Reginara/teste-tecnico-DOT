@@ -50,39 +50,60 @@
         <div class="img-card">
           <img class="icon-map" src="./assets/icon-02.svg">
         </div>
-        <div class="btn">
-          <button>
-            <img src="./assets/icon-arrow-up.svg">
+        <div class="btn-close" id="btn-icon-map">
+          <button type="button" class="btn-card-close">
+            <img src="./assets/icon-arrow-down.svg">
           </button>
         </div>
-        <div class="card-text">
-          <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+        <div class="div-opened" id="div-opened-map">
+          <div class="btn-open">
+            <button type="button" class="btn-card-open">
+              <img src="./assets/icon-arrow-up.svg">
+            </button>
+          </div>
+          <div class="card-text">
+            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="img-card">
           <img class="icon-file" src="./assets/icon-03.svg">
         </div>
-        <div class="btn">
-          <button>
-            <img src="./assets/icon-arrow-up.svg">
+        <div class="btn-close" id="btn-icon-file">
+          <button type="button" class="btn-card-close">
+            <img src="./assets/icon-arrow-down.svg">
           </button>
         </div>
-        <div class="card-text">
-          <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+        <div class="div-opened" id="div-opened-file">
+          <div class="btn-open">
+            <button type="button" class="btn-card-open">
+              <img src="./assets/icon-arrow-up.svg">
+            </button>
+          </div>
+          <div class="card-text">
+            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="img-card">
           <img class="icon-group" src="./assets/icon-04.svg">
         </div>
-        <div class="btn">
-          <button>
-            <img src="./assets/icon-arrow-up.svg">
+        <div class="btn-close" id="btn-icon-group">
+          <button type="button" class="btn-card-close">
+            <img src="./assets/icon-arrow-down.svg">
           </button>
         </div>
-        <div class="card-text">
-          <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+        <div class="div-opened" id="div-opened-group">
+          <div class="btn-open">
+            <button type="button" class="btn-card-open">
+              <img src="./assets/icon-arrow-up.svg">
+            </button>
+          </div>
+          <div class="card-text">
+            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -109,18 +130,33 @@
       <div class="interactive-cicle">
         <div class="buttons">
           <div class="btn-red">
-            <button>
+            <button class="btn-plus plus-red">
               <img class="plus" src="./assets/icon-plus.svg">
+            </button>
+          </div>
+          <div class="btn-red-minus">
+            <button class="btn-minus minus-red">
+              <img class="minus" src="./assets/icon-minos.svg">
             </button>
           </div>
           <div class="btn-yellow">
-            <button>
+            <button class="btn-plus plus-yellow">
               <img class="plus" src="./assets/icon-plus.svg">
             </button>
           </div>
+          <div class="btn-yellow-minus">
+            <button class="btn-minus minus-yellow">
+              <img class="minus" src="./assets/icon-minos.svg">
+            </button>
+          </div>
           <div class="btn-grey">
-            <button>
+            <button class="btn-plus plus-grey">
               <img class="plus" src="./assets/icon-plus.svg">
+            </button>
+          </div>
+          <div class="btn-grey-minus">
+            <button class="btn-minus minus-grey">
+              <img class="minus" src="./assets/icon-minos.svg">
             </button>
           </div>
         </div>
@@ -128,8 +164,15 @@
           <img  class="cicle-img" src="./assets/interactive.svg">
         </div>
         <div class="cicle-text">
-          <p>Texto com fundo<br>
+          <span>Clique no ícone <br> desejado</span>
+          <p class="color-red">Texto com fundo<br>
+            <strong>vermelho!</strong>
+          </p>
+          <p class="color-yellow">Texto com fundo<br>
             <strong>amarelo!</strong>
+          </p>
+          <p class="color-grey">Texto com fundo<br>
+            <strong>cinza!</strong>
           </p>
         </div>
       </div>
@@ -138,6 +181,7 @@
   <footer>
     <img class="logo-footer" src="./assets/icon-logo-footer.svg">
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
