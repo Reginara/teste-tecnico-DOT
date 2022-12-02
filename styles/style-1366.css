@@ -86,6 +86,7 @@
   .dropdown-cards {
     flex-direction: row;
     padding-bottom: 0;
+    align-items: baseline;
   }
   
   .card {
@@ -168,34 +169,46 @@
     margin: 159px 133px;
   }
 
-  .interactive-section button {
+  .interactive-section .btn-plus {
+    width: 50px;
+    height: 50px;
+  }
+
+  .interactive-section .btn-minus {
     width: 50px;
     height: 50px;
   }
   
-  .plus {
+  .plus, .minus {
     width: 20px;
     height: 20px;
     margin-top: 3px;
   } 
   
-    .buttons {
-      height: 570px;
-      width: 570px;
-    }
+  .buttons {
+    height: 570px;
+    width: 570px;
+  }
   
   .btn-red {
-    float: left;
     margin: 445px 0 0 30px;
   }
 
-  .btn-yellow {
+  .btn-red-minus {
+    margin-top: 445px;
+  }
+  
+
+  .btn-yellow, .btn-yellow-minus {
     margin: 43px 0 0 260px;
   }
 
   .btn-grey {
-    float: right;
-    margin: 355px 35px 0 0;
+    margin: 315px 35px 0 0;
+  }
+
+  .btn-grey-minus {
+    margin-top: 315px;
   }
 
   footer {
