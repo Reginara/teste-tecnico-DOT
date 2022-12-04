@@ -13,7 +13,7 @@
 
 .header {
   height: 450px;
-  background: url(../assets/header-360.png) no-repeat center center;
+  background: url(../assets/header/header-360.png) no-repeat center center;
   background-size: 100%;
   position: relative;
   color: #fff;
@@ -153,6 +153,10 @@ h1 {
 .img-card {
   align-items: center;
   height: 234px;
+}
+
+.img-card:hover {
+  opacity: 0.5;
 }
 
 .icon-map {
@@ -415,7 +419,7 @@ footer {
 
 @media screen and (min-width: 361px) {
   .header {
-    background: url(../assets/header-1024.png) no-repeat center center;
+    background: url(../assets/header/header-1024.png) no-repeat center center;
   }
 
   .icon-right {
@@ -425,7 +429,7 @@ footer {
 
 @media screen and (min-width: 1025px) {
   .header {
-    background: url(../assets/header-1024.png) no-repeat center center;
+    background: url(../assets/header/header-1024.png) no-repeat center center;
     background-size: 83em;
   }
 }

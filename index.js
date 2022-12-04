@@ -25,7 +25,17 @@ $(document).ready(function(){
     $('#div-opened-group').slideUp();
   })
 
-  // change styles at click on btn-yellow and return the style when click on btn-minus
+
+  $('.btn-yellow').click(function(){
+    $('.cicle-text').css('background-color', '#fff')
+    $('.cicle-text').css('color', '#000')
+    $('.cicle-text span').css('display', 'block')
+    $('.cicle-text p').css('display', 'none')
+    $('.minus-grey').hide()
+    $('.plus-grey').show()
+    $('.minus-red').hide()
+    $('.plus-red').show()
+  })
 
   $('.btn-yellow').click(function(){
     $('.plus-yellow').hide();
@@ -46,6 +56,17 @@ $(document).ready(function(){
   })
 
   $('.btn-red').click(function(){
+    $('.cicle-text').css('background-color', '#fff')
+    $('.cicle-text').css('color', '#000')
+    $('.cicle-text span').css('display', 'block')
+    $('.cicle-text p').css('display', 'none')
+    $('.minus-yellow').hide()
+    $('.plus-yellow').show()
+    $('.minus-grey').hide()
+    $('.plus-grey').show()
+  })
+
+  $('.btn-red').click(function(){
     $('.plus-red').hide()
     $('.minus-red').show()
     $('.cicle-text').css('background-color', '#ff3737')
@@ -63,6 +84,18 @@ $(document).ready(function(){
     $('.cicle-text span').css('display', 'block')
   })
   
+  // reset cicle-text when click on btn-grey
+  $('.btn-grey').click(function(){
+    $('.cicle-text').css('background-color', '#fff')
+    $('.cicle-text').css('color', '#000')
+    $('.cicle-text span').css('display', 'block')
+    $('.cicle-text p').css('display', 'none')
+    $('.minus-yellow').hide()
+    $('.plus-yellow').show()
+    $('.minus-red').hide()
+    $('.plus-red').show()
+  })
+
   $('.btn-grey').click(function(){
     $('.plus-grey').hide();
     $('.minus-grey').show();
